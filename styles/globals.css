@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: NetflixSans;
+    src: url('../public/fonts/NetflixSans.otf');
+}
+
+body {
+    @apply bg-zinc-900 h-full overflow-x-hidden font-[NetflixSans];
+}
+
+#__next {
+    @apply h-full;
+}
+
+html {
+    @apply h-full;
+}
