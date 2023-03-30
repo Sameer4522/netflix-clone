@@ -60,36 +60,34 @@ const Auth = () => {
             </h2>
 
             <div className="flex flex-col gap-4">
-              <form>
-                {varient === "signUp" && (
-                  <Input
-                    label="Username"
-                    id="name"
-                    onChange={(e: any) => {
-                      setName(e.target.value);
-                    }}
-                    value={name}
-                  />
-                )}
+              {varient === "signUp" && (
                 <Input
-                  label="Email"
-                  id="email"
-                  type="email"
+                  label="Username"
+                  id="name"
                   onChange={(e: any) => {
-                    setEmail(e.target.value);
+                    setName(e.target.value);
                   }}
-                  value={email}
+                  value={name}
                 />
-                <Input
-                  label="Password"
-                  id="password"
-                  type="password"
-                  onChange={(e: any) => {
-                    setPassword(e.target.value);
-                  }}
-                  value={password}
-                />
-              </form>
+              )}
+              <Input
+                label="Email"
+                id="email"
+                type="email"
+                onChange={(e: any) => {
+                  setEmail(e.target.value);
+                }}
+                value={email}
+              />
+              <Input
+                label="Password"
+                id="password"
+                type="password"
+                onChange={(e: any) => {
+                  setPassword(e.target.value);
+                }}
+                value={password}
+              />
             </div>
 
             <button
